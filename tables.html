@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website - Tables</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            margin: 0;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #17365d;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background: #24558a;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        main {
+            background: white;
+            max-width: 1000px;
+            margin: 25px auto;
+            padding: 25px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background: #dce9f7;
+        }
+
+        footer {
+            background: #17365d;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>HTML Tables</h1>
+    <p>Rows, Columns and Merged Cells</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="media.html">Media</a>
+    <a href="tables.html">Tables</a>
+</nav>
+
+<main>
+
+    <h2>1. Basic HTML Table</h2>
+
+    <table>
+        <caption>Computer Science Courses</caption>
+
+        <tr>
+            <th>Course Code</th>
+            <th>Course Name</th>
+            <th>Credit Hours</th>
+        </tr>
+
+        <tr>
+            <td>CS201</td>
+            <td>Web Programming</td>
+            <td>3</td>
+        </tr>
+
+        <tr>
+            <td>CS202</td>
+            <td>Database Systems</td>
+            <td>4</td>
+        </tr>
+
+        <tr>
+            <td>CS203</td>
+            <td>Computer Networks</td>
+            <td>3</td>
+        </tr>
+
+    </table>
+
+    <hr>
+
+    <h2>2. Colspan Example</h2>
+
+    <p>
+        Colspan merges two or more columns horizontally.
+    </p>
+
+    <table>
+
+        <tr>
+            <th colspan="3">Student Information</th>
+        </tr>
+
+        <tr>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Year</th>
+        </tr>
+
+        <tr>
+            <td>Kaleab</td>
+            <td>Computer Science</td>
+            <td>Third Year</td>
+        </tr>
+
+    </table>
+
+    <hr>
+
+    <h2>3. Rowspan Example</h2>
+
+    <p>
+        Rowspan merges two or more rows vertically.
+    </p>
+
+    <table>
+
+        <tr>
+            <th rowspan="2">Department</th>
+            <th>Student</th>
+            <th>Year</th>
+        </tr>
+
+        <tr>
+            <td>Kaleab</td>
+            <td>Third Year</td>
+        </tr>
+
+        <tr>
+            <td>Information Technology</td>
+            <td>Abel</td>
+            <td>Second Year</td>
+        </tr>
+
+    </table>
+
+    <hr>
+
+    <h2>4. Combining Colspan and Rowspan</h2>
+
+    <table>
+
+        <tr>
+            <th rowspan="2">Student</th>
+            <th colspan="2">Examination Results</th>
+        </tr>
+
+        <tr>
+            <th>HTML</th>
+            <th>Networking</th>
+        </tr>
+
+        <tr>
+            <td>Kaleab</td>
+            <td>85</td>
+            <td>90</td>
+        </tr>
+
+        <tr>
+            <td>Abel</td>
+            <td>80</td>
+            <td>88</td>
+        </tr>
+
+    </table>
+
+    <hr>
+
+    <h2>5. Table Elements</h2>
+
+    <ul>
+        <li>table - Creates a table.</li>
+        <li>tr - Creates a table row.</li>
+        <li>th - Creates a table heading.</li>
+        <li>td - Creates a table data cell.</li>
+        <li>caption - Adds a table title.</li>
+        <li>colspan - Merges columns.</li>
+        <li>rowspan - Merges rows.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Navigation</h2>
+
+    <p>
+        <a href="index.html">Return to Home Page</a>
+    </p>
+
+    <p>
+        <a href="media.html">Return to Media Page</a>
+    </p>
+
+</main>
+
+<footer>
+    <p>My Personal Website | Page 3</p>
+    <p>Contact: avokal04@gmail.com</p>
+</footer>
+
+</body>
+  </html>
+  
