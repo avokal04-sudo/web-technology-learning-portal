@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #17365d;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #24558a;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        main {
+            background: white;
+            max-width: 1000px;
+            margin: 25px auto;
+            padding: 25px;
+        }
+
+        h2 {
+            color: #17365d;
+        }
+
+        footer {
+            background: #17365d;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Welcome to My Personal Website</h1>
+    <p>Computer Science | Technology | Learning</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="media.html">Media</a>
+    <a href="tables.html">Tables</a>
+</nav>
+
+<main>
+
+    <h2>About This Website</h2>
+
+    <p>
+        Welcome to my personal website.
+        This project demonstrates my knowledge
+        of Internet Programming and HTML.
+    </p>
+
+    <p>
+        I am interested in <strong>Computer Science</strong>,
+        <b>Web Development</b>, and
+        <i>Technology</i>.
+    </p>
+
+    <hr>
+
+    <h2>HTML Text Formatting</h2>
+
+    <p><b>Bold text</b></p>
+    <p><i>Italic text</i></p>
+    <p><u>Underlined text</u></p>
+    <p><strong>Important text</strong></p>
+    <p><em>Emphasized text</em></p>
+
+    <p>Water formula: H<sub>2</sub>O</p>
+    <p>Mathematical expression: X<sup>2</sup> + Y<sup>2</sup></p>
+
+    <p>
+        First line of text.<br>
+        Second line after a line break.
+    </p>
+
+    <h3>Preformatted Text</h3>
+
+    <pre>
+Computer Science
+    |
+    |--- Programming
+    |--- Networking
+    |--- Database
+    |--- Web Development
+    </pre>
+
+    <hr>
+
+    <h2>My Learning Interests</h2>
+
+    <h3>Unordered List</h3>
+
+    <ul>
+        <li>Programming</li>
+        <li>Web Development</li>
+        <li>Cybersecurity</li>
+        <li>Artificial Intelligence</li>
+    </ul>
+
+    <h3>Ordered List</h3>
+
+    <ol>
+        <li>Learn HTML</li>
+        <li>Learn CSS</li>
+        <li>Learn JavaScript</li>
+        <li>Build Websites</li>
+    </ol>
+
+    <h3>Definition List</h3>
+
+    <dl>
+        <dt><b>HTML</b></dt>
+        <dd>HyperText Markup Language.</dd>
+
+        <dt><b>CSS</b></dt>
+        <dd>Cascading Style Sheets.</dd>
+
+        <dt><b>HTTP</b></dt>
+        <dd>HyperText Transfer Protocol.</dd>
+    </dl>
+
+    <hr>
+
+    <h2>Useful Links</h2>
+
+    <p>
+        Visit
+        <a href="https://www.google.com" target="_blank">
+            Google
+        </a>
+    </p>
+
+    <p>
+        Visit
+        <a href="https://www.w3.org" target="_blank">
+            W3C
+        </a>
+    </p>
+
+    <p>
+        <a href="media.html">Go to Media Page</a>
+    </p>
+
+    <p>
+        <a href="tables.html">Go to Tables Page</a>
+    </p>
+
+    <hr>
+
+    <h2>Contact Me</h2>
+
+    <address>
+        Email:
+        <a href="mailto:avokal04@gmail.com">
+            avokal04@gmail.com
+        </a>
+        <br>
+        Department: Computer Science
+    </address>
+
+    <hr>
+
+    <h2>Simple HTML Form</h2>
+
+    <form onsubmit="event.preventDefault(); alert('This is a demonstration form.');">
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name"
+               maxlength="50" required>
+
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <p>Study Mode:</p>
+
+        <input type="radio" id="regular"
+               name="mode" value="regular">
+        <label for="regular">Regular</label>
+
+        <input type="radio" id="extension"
+               name="mode" value="extension">
+        <label for="extension">Extension</label>
+
+        <p>
+            <input type="checkbox" id="agree" name="agree">
+            <label for="agree">I agree.</label>
+        </p>
+
+        <label for="course">Choose Course:</label>
+
+        <select id="course" name="course">
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+            <option>Networking</option>
+        </select>
+
+        <br><br>
+
+        <label for="message">Message:</label><br>
+
+        <textarea id="message" name="message"
+                  rows="4" cols="40"></textarea>
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+    <hr>
+
+    <h2>JavaScript Example</h2>
+
+    <button onclick="alert('Welcome to my website!')">
+        Click Me
+    </button>
+
+</main>
+
+<footer>
+    <p>My Personal Website | Page 1</p>
+    <p>Contact: avokal04@gmail.com</p>
+</footer>
+
+</body>
+  </html>
+  
