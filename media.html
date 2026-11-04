@@ -1,28 +1,34 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website - Media</title>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>My Personal Website - Media</title>
 
     <style>
+
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f4f8;
             margin: 0;
             line-height: 1.7;
+            color: #222;
         }
 
         header {
-            background: #17365d;
+            background-color: #17365d;
             color: white;
             text-align: center;
             padding: 25px;
         }
 
         nav {
-            background: #24558a;
+            background-color: #24558a;
             padding: 15px;
             text-align: center;
         }
@@ -30,134 +36,323 @@
         nav a {
             color: white;
             text-decoration: none;
-            margin: 15px;
+            margin: 12px;
             font-weight: bold;
         }
 
+        nav a:hover {
+            color: yellow;
+            text-decoration: underline;
+        }
+
         main {
-            background: white;
+            background-color: white;
             max-width: 1000px;
             margin: 25px auto;
             padding: 25px;
+            border-radius: 8px;
         }
 
-        img, video, iframe {
+        h2 {
+            color: #17365d;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 8px;
+        }
+
+        img {
             max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        video {
+            width: 100%;
+            max-width: 650px;
+            border-radius: 8px;
+            background-color: black;
+        }
+
+        audio {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: 2px solid #999;
+            border-radius: 5px;
+        }
+
+        .note {
+            background-color: #eaf2fb;
+            padding: 15px;
+            border-left: 4px solid #24558a;
         }
 
         footer {
-            background: #17365d;
+            background-color: #17365d;
             color: white;
             text-align: center;
-            padding: 15px;
+            padding: 18px;
         }
+
     </style>
+
 </head>
 
 <body>
 
-<header>
-    <h1>Images, Videos and Audio</h1>
-    <p>Multimedia in HTML</p>
-</header>
+    <!-- HEADER -->
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="media.html">Media</a>
-    <a href="tables.html">Tables</a>
-</nav>
+    <header>
 
-<main>
+        <h1>Images, Videos and Audio</h1>
 
-    <h2>1. Adding an Image</h2>
+        <p>
+            Welcome to the Multimedia Section
+            of My Personal Website
+        </p>
 
-    <p>
-        HTML uses the img element to display images.
-        The src attribute specifies the image location.
-    </p>
+    </header>
 
-    <img
-        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900"
-        alt="Student using a computer"
-        width="600"
-    >
 
-    <h2>2. Image as a Hyperlink</h2>
+    <!-- NAVIGATION -->
 
-    <p>Click the image to visit W3C.</p>
+    <nav>
 
-    <a href="https://www.w3.org/" target="_blank">
+        <a href="index.html">Home</a>
+
+        <a href="media.html">Media</a>
+
+        <a href="tables.html">Tables</a>
+
+    </nav>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main>
+
+        <!-- SECTION 1: IMAGE -->
+
+        <h2>1. Adding an Image</h2>
+
+        <p>
+            HTML uses the
+            <strong>img</strong>
+            element to display images on a webpage.
+
+            The <b>src</b> attribute specifies
+            the image location, while the
+            <b>alt</b> attribute describes
+            the image.
+        </p>
+
         <img
-            src="https://www.w3.org/2008/site/images/logo-w3c-mobile-lg.png"
-            alt="W3C Logo"
-            width="180"
+            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900"
+            alt="Student using a computer"
+            width="600"
         >
-    </a>
 
-    <hr>
+        <p class="note">
+            Note: If the image does not appear,
+            check your Internet connection or
+            replace the image URL with a local
+            image file.
+        </p>
 
-    <h2>3. Adding Video</h2>
 
-    <p>
-        The video element allows us to display
-        video files inside a webpage.
-    </p>
+        <hr>
 
-    <video width="600" controls>
-        <source
-            src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
-            type="video/mp4"
-        >
-        Your browser does not support video.
-    </video>
 
-    <hr>
+        <!-- SECTION 2: IMAGE HYPERLINK -->
 
-    <h2>4. Adding Audio</h2>
+        <h2>2. Image as a Hyperlink</h2>
 
-    <audio controls>
-        <source
-            src="https://www.w3schools.com/html/horse.mp3"
-            type="audio/mpeg"
-        >
-        Your browser does not support audio.
-    </audio>
+        <p>
+            An image can also work as a hyperlink.
+            Click the image below to visit W3C.
+        </p>
 
-    <hr>
+        <a href="https://www.w3.org/"
+           target="_blank"
+           rel="noopener">
 
-    <h2>5. Embedded Webpage</h2>
+            <img
+                src="https://www.w3.org/2008/site/images/logo-w3c-mobile-lg.png"
+                alt="W3C Logo"
+                width="180"
+            >
 
-    <p>
-        The iframe element can display another webpage
-        inside the current webpage.
-    </p>
+        </a>
 
-    <iframe
-        src="https://www.w3.org/"
-        title="W3C website"
-        width="700"
-        height="350">
-    </iframe>
 
-    <hr>
+        <hr>
 
-    <h2>6. Navigation Between Pages</h2>
 
-    <p>
-        <a href="index.html">Return to Home Page</a>
-    </p>
+        <!-- SECTION 3: VIDEO -->
 
-    <p>
-        <a href="tables.html">Continue to Tables Page</a>
-    </p>
+        <h2>3. Adding Video</h2>
 
-</main>
+        <p>
+            The HTML video element allows us
+            to display video files directly
+            inside a webpage.
 
-<footer>
-    <p>My Personal Website | Page 2</p>
-    <p>Contact: avokal04@gmail.com</p>
-</footer>
+            The controls attribute provides
+            play, pause and volume controls.
+        </p>
+
+        <video controls preload="metadata">
+
+            <source
+                src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                type="video/mp4"
+            >
+
+            Your browser does not support video.
+
+        </video>
+
+
+        <hr>
+
+
+        <!-- SECTION 4: AUDIO -->
+
+        <h2>4. Adding Audio</h2>
+
+        <p>
+            The audio element allows us
+            to play sound files inside
+            an HTML document.
+        </p>
+
+        <audio controls>
+
+            <source
+                src="https://www.w3schools.com/html/horse.mp3"
+                type="audio/mpeg"
+            >
+
+            Your browser does not support audio.
+
+        </audio>
+
+
+        <hr>
+
+
+        <!-- SECTION 5: IFRAME -->
+
+        <h2>5. Embedded Webpage</h2>
+
+        <p>
+            The iframe element displays
+            another webpage inside the
+            current webpage.
+        </p>
+
+        <iframe
+            src="index.html"
+            title="My Personal Home Page"
+            loading="lazy">
+        </iframe>
+
+        <p class="note">
+            This iframe displays your own
+            index.html page. All three HTML
+            files must be in the same folder.
+        </p>
+
+
+        <hr>
+
+
+        <!-- SECTION 6: WEB REQUEST PROCESS -->
+
+        <h2>6. How Media Loads on a Webpage</h2>
+
+        <ol>
+
+            <li>
+                The browser reads the HTML document.
+            </li>
+
+            <li>
+                It identifies the image, audio
+                and video resource URLs.
+            </li>
+
+            <li>
+                The browser sends HTTP requests
+                to obtain those resources.
+            </li>
+
+            <li>
+                The web server returns the
+                requested resources.
+            </li>
+
+            <li>
+                The browser displays the media
+                or provides playback controls.
+            </li>
+
+        </ol>
+
+
+        <hr>
+
+
+        <!-- SECTION 7: NAVIGATION -->
+
+        <h2>7. Navigation Between Pages</h2>
+
+        <p>
+            You can visit the other pages
+            of my personal website using
+            the links below.
+        </p>
+
+        <p>
+            <a href="index.html">
+                Return to Home Page
+            </a>
+        </p>
+
+        <p>
+            <a href="tables.html">
+                Continue to Tables Page
+            </a>
+        </p>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>My Personal Website | Page 2</p>
+
+        <p>
+            Contact:
+            <a href="mailto:avokal04@gmail.com"
+               style="color: white;">
+                avokal04@gmail.com
+            </a>
+        </p>
+
+        <p>
+            © 2026 My Personal Website
+        </p>
+
+    </footer>
 
 </body>
-      </html>
+
+            </html>
+                
   
