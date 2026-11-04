@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website - Media</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #17365d;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background: #24558a;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        main {
+            background: white;
+            max-width: 1000px;
+            margin: 25px auto;
+            padding: 25px;
+        }
+
+        img, video, iframe {
+            max-width: 100%;
+        }
+
+        footer {
+            background: #17365d;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Images, Videos and Audio</h1>
+    <p>Multimedia in HTML</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="media.html">Media</a>
+    <a href="tables.html">Tables</a>
+</nav>
+
+<main>
+
+    <h2>1. Adding an Image</h2>
+
+    <p>
+        HTML uses the img element to display images.
+        The src attribute specifies the image location.
+    </p>
+
+    <img
+        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900"
+        alt="Student using a computer"
+        width="600"
+    >
+
+    <h2>2. Image as a Hyperlink</h2>
+
+    <p>Click the image to visit W3C.</p>
+
+    <a href="https://www.w3.org/" target="_blank">
+        <img
+            src="https://www.w3.org/2008/site/images/logo-w3c-mobile-lg.png"
+            alt="W3C Logo"
+            width="180"
+        >
+    </a>
+
+    <hr>
+
+    <h2>3. Adding Video</h2>
+
+    <p>
+        The video element allows us to display
+        video files inside a webpage.
+    </p>
+
+    <video width="600" controls>
+        <source
+            src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+            type="video/mp4"
+        >
+        Your browser does not support video.
+    </video>
+
+    <hr>
+
+    <h2>4. Adding Audio</h2>
+
+    <audio controls>
+        <source
+            src="https://www.w3schools.com/html/horse.mp3"
+            type="audio/mpeg"
+        >
+        Your browser does not support audio.
+    </audio>
+
+    <hr>
+
+    <h2>5. Embedded Webpage</h2>
+
+    <p>
+        The iframe element can display another webpage
+        inside the current webpage.
+    </p>
+
+    <iframe
+        src="https://www.w3.org/"
+        title="W3C website"
+        width="700"
+        height="350">
+    </iframe>
+
+    <hr>
+
+    <h2>6. Navigation Between Pages</h2>
+
+    <p>
+        <a href="index.html">Return to Home Page</a>
+    </p>
+
+    <p>
+        <a href="tables.html">Continue to Tables Page</a>
+    </p>
+
+</main>
+
+<footer>
+    <p>My Personal Website | Page 2</p>
+    <p>Contact: avokal04@gmail.com</p>
+</footer>
+
+</body>
+      </html>
+  
